@@ -9,7 +9,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body style="margin: 0">
+    <div style="background-color: lightgrey; padding: 16px;">
+      Navbar
+      <%= link_to 'Back to home sadge', root_path %>
+      <%= link_to 'About us omegalul', about_path %>
+      <%= link_to 'Contact us Pog', contact_path %>
+    </div>
+
+    <div style="margin: 16px">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
